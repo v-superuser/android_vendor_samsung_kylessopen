@@ -17,12 +17,38 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/kylexx/proprietary/lib/libcamera.so:obj/lib/libcamera.so
 
-## RIL (Radio Interface Relay)
+# Misc
 PRODUCT_COPY_FILES += \
-    vendor/samsung/kylexx/proprietary/bin/rild:system/bin/rild \
-    vendor/samsung/kylexx/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/samsung/kylexx/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/kylexx/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so
+    vendor/samsung/kylexx/bin/netmgrd:system/bin/netmgrd \
+    vendor/samsung/kylexx/bin/qmiproxy:system/bin/qmiproxy \
+    vendor/samsung/kylexx/bin/qmuxd:system/bin/qmuxd 
+
+# RIL
+PRODUCT_COPY_FILES += \
+    vendor/samsung/kylexx/bin/rild:system/bin/rild \
+    vendor/samsung/kylexx/bin/sec-ril:system/bin/sec-ril \
+    vendor/samsung/kylexx/lib/libauth.so:system/lib/libauth.so \
+    vendor/samsung/kylexx/lib/libcm.so:system/lib/libcm.so \
+    vendor/samsung/kylexx/lib/libdiag.so:system/lib/libdiag.so \
+    vendor/samsung/kylexx/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
+    vendor/samsung/kylexx/lib/libdsm.so:system/lib/libdsm.so \
+    vendor/samsung/kylexx/lib/libdsutils.so:system/lib/libdsutils.so \
+    vendor/samsung/kylexx/lib/libidl.so:system/lib/libidl.so \
+    vendor/samsung/kylexx/lib/libnetmgr.so:system/lib/libnetmgr.so \
+    vendor/samsung/kylexx/lib/libnv.so:system/lib/libnv.so \
+    vendor/samsung/kylexx/lib/liboncrpc.so:system/lib/liboncrpc.so \
+    vendor/samsung/kylexx/lib/libpbmlib.so:system/lib/libpbmlib.so \
+    vendor/samsung/kylexx/lib/libqdi.so:system/lib/libqdi.so \
+    vendor/samsung/kylexx/lib/libqdp.so:system/lib/libqdp.so \
+    vendor/samsung/kylexx/lib/libqmiservices.so:system/lib/libqmiservices.so \
+    vendor/samsung/kylexx/lib/libqmi.so:system/lib/libqmi.so \
+    vendor/samsung/kylexx/lib/libqueue.so:system/lib/libqueue.so \
+    vendor/samsung/kylexx/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/kylexx/lib/libril-qc-1.so:system/lib/libril-qc-1.so \
+    vendor/samsung/kylexx/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/kylexx/lib/libwms.so:system/lib/libwms.so \
+    vendor/samsung/kylexx/lib/libwmsts.so:system/lib/libwmsts.so \
+    vendor/samsung/kylexx/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
 
 ## Camera
 PRODUCT_COPY_FILES += \
@@ -86,13 +112,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kylexx/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init
 
 ## Other libs
-PRODUCT_COPY_FILES += \
-    vendor/samsung/kylexx/proprietary/lib/libdiag.so:system/lib/libdiag.so \
-    vendor/samsung/kylexx/proprietary/lib/libdsm.so:system/lib/libdsm.so \
-    vendor/samsung/kylexx/proprietary/lib/libnv.so:system/lib/libnv.so \
-    vendor/samsung/kylexx/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
-    vendor/samsung/kylexx/proprietary/lib/libqueue.so:system/lib/libqueue.so \
-    vendor/samsung/kylexx/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/kylexx/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+#    vendor/samsung/kylexx/proprietary/lib/libdsm.so:system/lib/libdsm.so \
+#    vendor/samsung/kylexx/proprietary/lib/libnv.so:system/lib/libnv.so \
+#    vendor/samsung/kylexx/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
+#    vendor/samsung/kylexx/proprietary/lib/libqueue.so:system/lib/libqueue.so \
+#    vendor/samsung/kylexx/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
 
 ## OMX
 PRODUCT_COPY_FILES += \
